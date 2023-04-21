@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WTMP Ultimate clear cache</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		header {
+			background-color: #000000;
+			color: #ffffff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		h1 {
+			font-size: 36px;
+			margin: 0;
+		}
+		
+		main {
+			padding: 20px;
+		}
+		
+		form {
+			background-color: #ffffff;
+			border-radius: 5px;
+			padding: 20px;
+			text-align: center;
+			max-width: 500px;
+			margin: 0 auto;
+			box-shadow: 0 0 10px #cccccc;
+		}
+		
+		input[type="email"] {
+			width: 100%;
+			margin-bottom: 10px;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #cccccc;
+			font-size: 16px;
+		}
+		
+		button[type="submit"] {
+			background-color: #000000;
+			color: #ffffff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			font-size: 18px;
+			cursor: pointer;
+			transition: background-color 0.2s ease;
+		}
+		
+		.data-types {
+			margin-top: 20px;
+			padding: 20px;
+			background-color: #f7f7f7;
+			border-radius: 5px;
+			max-width: 500px;
+			margin: 0 auto;
+			box-shadow: 0 0 10px #cccccc;
+		}
+		
+		.data-types h2 {
+			margin-top: 0;
+			font-size: 24px;
+			color: #000000;
+		}
+		
+		.data-types li {
+			font-size: 18px;
+			color: #000000;
+			margin-bottom: 5px;
+		}
+		
+		.data-types p {
+			font-size: 16px;
+			color: #666666;
+			margin-top: 10px;
+		}
+		
+		.instructions {
+			background-color: #ffffff;
+			padding: 20px;
+			border-radius: 5px;
+			max-width: 500px;
+			margin: 20px auto;
+			box-shadow: 0 0 10px #cccccc;
+		}
+		
+		.instructions h2 {
+			margin-top: 0;
+			font-size: 24px;
+			color: #000000;
+		}
+		
+		.instructions ol {
+			padding-left: 20px;
+			margin-top: 10px;
+			font-size: 18px;
+			color: #000000;
+		}
+		
+		.instructions li {
+			margin-bottom: 10px;
+		}
+		
+		.instructions p {
+			font-size: 16px;
+			color: #666666;
+			margin-top: 10px;
+		}
+		
+		footer {
+			background-color: #000000;
+			padding: 20px;
+			color: #ffffff;
+			text-align: center;
+		}
+		
+		footer p {
+			margin: 0;
+			font-size: 16px;
+		}
+		
+		button[type="submit"]:hover {
+			background-color: #333333;
+		}
+		
+		.zebra-background {
+			background-image: linear-gradient(to bottom, #ffffff 50%, #000000 50%);
+			background-size: 100% 30px;
+		}
+		
+		.zebra-background > * {
+			position: relative;
+			z-index: 1;
+		}
+		
+		.zebra-background:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-image: linear-gradient(to bottom, #000000 50%, #ffffff 50%);
+			background-size: 100% 30px;
+			opacity: 0.5;
+			z-index: -1;
+		}
+	</style>
+</head>
+<body class="zebra-background">
+	<header>
+		<h1>WTMP Ultimate clear cache</h1>
+		<p>Remove your data with ease</p>
+	</header>
+	<main>
+		<form>
+			<label for="email">Enter your email address to remove your data:</label>
+			<input type="email" id="email" name="email" required>
+			<button type="submit">Clear data</button>
+		</form>
+		
+		<div class="data-types">
+			<h2>Types of data that will be removed:</h2>
+			<ul>
+				<li>Application history</li>
+				<li>Cookies</li>
+				<li>Cache</li>
+				<li>Local storage</li>
+				<li>Session storage</li>
+			</ul>
+			<p>Note: Any data that is synced to other devices will not be affected.</p>
+		</div>
+		
+		<div class="instructions">
+			<h2>Instructions:</h2>
+			<ol>
+				<li>Enter your email address in the form above.</li>
+				<li>Click the "Clear data" button.</li>
+				<li>Check your email for a confirmation link.</li>
+				<li>Click the link to confirm the data removal request.</li>
+			</ol>
+			<p>Note: Your data will be permanently deleted and cannot be recovered.</p>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2023 WTMP Ultimate clear cache. All rights reserved.</p>
+	</footer>
+</body>
+</html>
